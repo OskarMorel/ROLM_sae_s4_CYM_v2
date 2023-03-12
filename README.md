@@ -8,8 +8,8 @@ humeur au fil du temps en fonction de différents paramètres comme la période,
 etc. Pour plus de détails sur la version 1 de l’application, vous pouvez consulter le cahier des
 charges de la version 1 (cf. SAÉ du semestre 3).
 La version 2 de l’application vise 2 objectifs :
-• Améliorer la qualité de l’application (code, tests, impact environnemental, sécurité).
-• Fournir une version mobile Android de la saisie des humeurs.
+- Améliorer la qualité de l’application (code, tests, impact environnemental, sécurité).
+- Fournir une version mobile Android de la saisie des humeurs.
 
 Ce repository est utilisé pour le développement de la version mobile de CheckYourMood, appelée, CYMDroid
 
