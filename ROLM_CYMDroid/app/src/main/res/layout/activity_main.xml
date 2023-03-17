@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableRow>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="10"
+            app:srcCompat="@drawable/???" />
+    </TableRow>
+
+    <TableRow android:layout_width="101dp">
+
+        <TextView
+            style="@style/Titre"
+            android:text="@string/texte_connexion" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="@integer/material_motion_duration_long_2"
+            android:text="@string/libelle_identifiant"
+            android:textColor="@color/black"/>
+
+        <EditText
+            style="@style/zone_saisie"
+            android:layout_width="wrap_content"
+            android:layout_gravity="" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="@integer/material_motion_duration_long_2"
+            android:text="@string/libelle_mdp"
+            android:textColor="@color/black"/>
+        <EditText
+            style="@style/zone_saisie"
+            android:layout_width="wrap_content"
+            android:layout_gravity="" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_valider"
+            android:layout_column="@integer/material_motion_duration_long_2"
+            android:layout_marginRight="5dp"
+            android:text="@string/libelle_valider" />
+    </TableRow>
+</TableLayout>

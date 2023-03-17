@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">ROLM_CYMDroid</string>
+    <string name="app_name">CYM</string>
+    <!-- chaînes pour le texte de présentation -->
+    <string name="texte_connexion">SE CONNECTER</string>
+    <!-- chaînes libellés pour les zones de saisie -->
+    <string name="libelle_identifiant">Adresse mail : </string>
+    <string name="libelle_mdp">Mot de passe : </string>
+    <!-- libellés des boutons -->
+    <string name="libelle_valider">Valider</string>
 </resources>

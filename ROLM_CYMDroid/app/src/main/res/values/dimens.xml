@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- largeur de l'image -->
+    <dimen name="largeur_image">10dp</dimen>
+    <!-- marges diverses -->
+    <dimen name="petite_marge_haute">3dp</dimen>
+    <dimen name="marge_haute">15dp</dimen>
+    <dimen name="marge_horizontale">8dp</dimen>
+    <dimen name="marge_droite">5dp</dimen>
+    <dimen name="marge_gauche">5dp</dimen>
+    <!-- taille du texte ordinaire -->
+    <dimen name="taille_texte">13sp</dimen>
+    <!-- taille du texte de titre -->
+    <dimen name="taille_titre">20sp</dimen>
+    <!-- padding pour les boutons de validation-->
+    <dimen name="padding_gauche">10dp</dimen>
+    <dimen name="padding_droit">10dp</dimen>
+
+</resources>
