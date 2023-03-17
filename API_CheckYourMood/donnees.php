@@ -4,7 +4,7 @@
 	function getPDO(){
 		// Retourne un objet connexion à la BD
 		$host='localhost';	// Serveur de BD
-		$db='mezabi3';		// Nom de la BD
+		$db='checkyourmood';// Nom de la BD
 		$user='root';		// User 
 		$pass='root';		// Mot de passe
 		$charset='utf8mb4';	// charset utilisé
@@ -101,6 +101,85 @@
 			$infos['message']="Données incomplètes";
 			sendJSON($infos, 400) ;
 		}
+	}
+
+	function getAPIKEY($login){
+
+		try {
+			$pdo=getPDO();
+
+			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login' ;
+			
+			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
+			$stmt = $pdo->prepare("Email", $login);
+            $stmt->execute();
+
+            $connexion=$stmt ->fetchALL();
+			$stmt->closeCursor();
+
+			$stmt=null;
+			$pdo=null;
+
+			sendJSON($connexion, 200) ;
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
+	}
+
+	function verifLogin($login){
+
+		try {
+			$pdo=getPDO();
+
+			$maRequete='SELECT Email = :login FROM compte WHERE Email IS NOT NULL' ;
+			
+			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
+			$stmt = $pdo->prepare("Email", $login);
+            $stmt->execute();
+
+            $connexion=$stmt ->fetchALL();
+			$stmt->closeCursor();
+
+			$stmt=null;
+			$pdo=null;
+
+			sendJSON($connexion, 200) ;
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
+	}
+
+	function creerAPIKEY($login, $APIKEY){
+
+		try {
+			$pdo=getPDO();
+
+			$maRequete='UPDATE `compte` SET APIKEY = :APIKEY WHERE Email = :login' ;
+			
+			$stmt = $pdo->prepare($maRequete);	
+			$stmt = $pdo->prepare("APIKEY", $APIKEY);									// Préparation de la requête
+			$stmt = $pdo->prepare("Email", $login);
+            $stmt->execute();
+
+            $IdInsere=$pdo ->lastInsertID();
+			$stmt->closeCursor();
+
+			$stmt=null;
+			$pdo=null;
+
+			sendJSON($IdInsere, 200) ;
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
 	}
 	
 
