@@ -56,7 +56,7 @@
 
         <Button
             android:id="@+id/btn_valider"
-            android:backgroundTint="#FFFFFFFF"
+            android:backgroundTint="#c7c7c7"
             android:text="@string/libelle_connexion"
             android:textColor="@color/black"
             android:textSize="15sp"
