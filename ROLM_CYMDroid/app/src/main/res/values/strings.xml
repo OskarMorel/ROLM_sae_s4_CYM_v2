@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">ROLM_CYMDroid</string>
+    <string name="app_name">CYMDroid</string>
+
+    <!-- Page de connexion -->
+    <string name="texte_connexion">SE CONNECTER</string>
+    <string name="libelle_identifiant">Adresse mail : </string>
+    <string name="libelle_mdp">Mot de passe : </string>
+    <string name="libelle_connexion">Connexion</string>
+
+    <!-- Page d'accueil -->
+    <string name="label_deconnexion">Se déconnecter</string>
+    <string name="label_nouvelle_humeur">Nouvelle humeur</string>
+
+    <!-- Pop up nouvelle humeur -->
+    <string name="titre_popup">Nouvelle humeur</string>
+    <string name="label_libelle">Libellé :</string>
+    <string name="label_date_heure">Date et heure :</string>
+    <string name="label_information">Information :</string>
+    <string name="label_annuler">Annuler</string>
+    <string name="label_valider">Valider</string>
+
+
 </resources>

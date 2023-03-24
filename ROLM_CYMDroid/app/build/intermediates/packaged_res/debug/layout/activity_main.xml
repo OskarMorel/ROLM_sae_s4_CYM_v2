@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            style="@style/Titre"
+            android:text="@string/texte_connexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:text="@string/libelle_identifiant"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            style="@style/zone_saisie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:text="@string/libelle_mdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            style="@style/zone_saisie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_valider"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="#FFFFFFFF"
+            android:text="@string/libelle_valider"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            />
+
+</LinearLayout>
