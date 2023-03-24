@@ -129,15 +129,39 @@
 
 	}
 
-	function verifLogin($login){
+	function getAllAPIKEY($value){
 
 		try {
 			$pdo=getPDO();
 
-			$maRequete='SELECT Email = :login FROM compte WHERE Email IS NOT NULL' ;
+			$maRequete="SELECT APIKEY FROM compte WHERE APIKEY = :value" ;
+			
+			$stmt = $pdo->prepare($maRequete);	
+			$stmt = $pdo->prepare("APIKEY", $value);	
+            
+			$result = $stmt->execute();;
+
+			
+
+			sendJSON($result, 200) ;
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
+	}
+
+	function verifLogin($login, $mdp){
+
+		try {
+			$pdo=getPDO();
+
+			$maRequete='SELECT Email = :login FROM compte WHERE Email = :login AND Mot_de_passe  = :mdp' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
 			$stmt = $pdo->prepare("Email", $login);
+			$stmt = $pdo->prepare("Mot_de_passe", $mdp);
             $stmt->execute();
 
             $connexion=$stmt ->fetchALL();
@@ -160,8 +184,20 @@
 		try {
 			$pdo=getPDO();
 
-			$maRequete='UPDATE `compte` SET APIKEY = :APIKEY WHERE Email = :login' ;
+			$maRequete='UPDATE compte SET APIKEY = :APIKEY WHERE Email = :login' ;
 			
+			$length = 32; // longueur de la clé d'API
+			$api_key = base64_encode(random_bytes($length));
+
+			
+			if (getAllAPIKEY($api_key)->num_rows > 0) {
+				// La colonne contient la valeur recherchée
+				creerAPIKEY($login, $APIKEY);
+			} else {
+				// La colonne ne contient pas la valeur recherchée
+				$APIKEY = $api_key;
+			}
+
 			$stmt = $pdo->prepare($maRequete);	
 			$stmt = $pdo->prepare("APIKEY", $APIKEY);									// Préparation de la requête
 			$stmt = $pdo->prepare("Email", $login);

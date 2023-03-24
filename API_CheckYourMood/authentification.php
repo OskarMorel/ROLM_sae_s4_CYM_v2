@@ -6,7 +6,7 @@
 		if (isset($_SERVER["HTTP_APIKEYDEMONAPPLI"])) {
 			$cleAPI=$_SERVER["HTTP_APIKEYDEMONAPPLI"];
 			// Test de la clé API fait en dur pour l'exemple mais devrait être fait avec la BD
-			if ($cleAPI!="JAQ2345RTtve") {
+			if (!getAllAPIKEY($cleAPI)) {
 				$infos['Statut']="KO";
 				$infos['message']="APIKEY invalide.";
 				sendJSON($infos, 403) ;
@@ -34,11 +34,16 @@
 		// fonction qui vérifie si le login et le password sont ok.
 		// Si ok, on génère une clé API qui sera normalement stockée dans la BD
 		// Et on la retourne au client
-		if ($login=="x@x.x" and $password=="12345678") {
+		if (verifLogin($login, $password)->num_rows > 0) {
 			// Login et mot de passe correct, 
 			// Genération de la clé, stockage en BD (non fait dans cet exemple)
 			// Envoi de la clé au client.
-			$infos['APIKEYDEMONAPPLI']="JAQ2345RTtve";
+			if (getAPIKEY($login)->num_rows == 1) {
+				// La colonne contient la valeur recherchée
+				creerAPIKEY($login, 0);
+			} 
+
+			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login);
 			sendJSON($infos, 200) ;
 		} else {
 			// Login incorrect
