@@ -94,20 +94,21 @@
 			if (!empty($_GET['demande'])) {
 				// $encode=urlencode($_GET['demande']);
 				// $decode=urldecode($encode);
-				
 				// décomposition URL par les / et  FILTER_SANITIZE_URL-> Supprime les caractères illégaux des URL
 				$url = explode("/", filter_var($_GET['demande'],FILTER_SANITIZE_URL));
-				
 				switch($url[0]) {
 					case 'login' :
 						// Retournera une clé API si le login et password sont OK
 						// La clé API sera utilisée pour les prochaines requetes.
-						if (isset($url[1])) {$login=$url[1];} else {$login="";}
-						if (isset($url[2])) {$password=$url[2];} else {$password="";}
+						if (isset($_GET['login'])) {$login=$_GET['login'];} else {$login="";}
+						if (isset($_GET['pwd'])) {$password=$_GET['pwd'];} else {$password="";}
 						verifLoginPassword($login,$password);  // retourne l'apiKey si les logins / pwd sont ok
 					break;
 					case 'humeursRecentes' :
 						// Retourne les types de clients
+                        if (isset($_GET['login'])) {$login=$_GET['login'];} else {$login="";}
+                        if (isset($_GET['pwd'])) {$password=$_GET['pwd'];} else {$password="";}
+                        $infos['APIKEYDEMONAPPLI']=getAPIKEY($login, $password);
 						authentification(); // Test si on est bien authenfifié pour l'API
 						getLast5Humors();
 						break;
