@@ -34,13 +34,16 @@
 		// fonction qui vérifie si le login et le password sont ok.
 		// Si ok, on génère une clé API qui sera normalement stockée dans la BD
 		// Et on la retourne au client
-		if (verifLogin($login, $password)->num_rows > 0) {
+		if (verifLogin($login, $password)) {
 			// Login et mot de passe correct, 
 			// Genération de la clé, stockage en BD (non fait dans cet exemple)
 			// Envoi de la clé au client.
-			if (getAPIKEY($login)->num_rows == 1) {
+			print('on est ici');
+			creerAPIKEY($login);
+			if (verifNonAPIKEY($login)) {
 				// La colonne contient la valeur recherchée
-				creerAPIKEY($login, 0);
+				print('on est la');
+				
 			} 
 
 			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login);

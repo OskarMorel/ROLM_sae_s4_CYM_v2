@@ -38,7 +38,7 @@
 			$maRequete='SELECT * FROM historique WHERE Code_Compte = :id LIMIT 5' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
-			$stmt = $pdo->prepare("Code_Compte", $id);
+			$stmt->bindParam("id", $id);
             $stmt->execute();
 
             $humors=$stmt ->fetchALL();
@@ -111,7 +111,7 @@
 			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
-			$stmt = $pdo->prepare("Email", $login);
+			$stmt->bindParam("login", $login);
             $stmt->execute();
 
             $connexion=$stmt ->fetchALL();
@@ -137,13 +137,20 @@
 			$maRequete="SELECT APIKEY FROM compte WHERE APIKEY = :value" ;
 			
 			$stmt = $pdo->prepare($maRequete);	
-			$stmt = $pdo->prepare("APIKEY", $value);	
-            
-			$result = $stmt->execute();;
+			$stmt->bindParam("value", $value);	
+			$result = $stmt->execute();
+			$nb = $stmt->rowCount();
 
-			
+			$connexion=$stmt->fetchALL();
+			$stmt->closeCursor();
+			$stmt=null;
+			$pdo=null;
 
-			sendJSON($result, 200) ;
+			if ($nb>=1) {
+				return true;
+			} else {
+				return false;
+			}
 		} catch(PDOException $e){
 			$infos['Statut']="KO";
 			$infos['message']=$e->getMessage();
@@ -157,20 +164,24 @@
 		try {
 			$pdo=getPDO();
 
-			$maRequete='SELECT Email = :login FROM compte WHERE Email = :login AND Mot_de_passe  = :mdp' ;
+			$maRequete='SELECT Email FROM compte WHERE Email = :login AND Mot_de_passe  = :mdp' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
-			$stmt = $pdo->prepare("Email", $login);
-			$stmt = $pdo->prepare("Mot_de_passe", $mdp);
+			$stmt->bindParam("login", $login);
+			$stmt->bindParam("mdp", $mdp);
             $stmt->execute();
+			$nb = $stmt->rowCount();
 
-            $connexion=$stmt ->fetchALL();
+            $connexion=$stmt->fetchALL();
 			$stmt->closeCursor();
-
 			$stmt=null;
 			$pdo=null;
 
-			sendJSON($connexion, 200) ;
+			if ($nb==1) {
+				return true;
+			} else {
+				return false;
+			}
 		} catch(PDOException $e){
 			$infos['Statut']="KO";
 			$infos['message']=$e->getMessage();
@@ -179,7 +190,36 @@
 
 	}
 
-	function creerAPIKEY($login, $APIKEY){
+	function verifNonAPIKEY($login){
+
+		try {
+			$pdo=getPDO();
+
+			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login' ;
+			
+			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
+			$stmt->bindParam("login", $login);
+            $stmt->execute();
+
+			if ($stmt == null) {
+				return true;
+			} else {
+				return false;
+			}
+			$connexion=$stmt ->fetchALL();
+			$stmt->closeCursor();
+			$stmt=null;
+			$pdo=null;
+
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
+	}
+
+	function creerAPIKEY($login){
 
 		try {
 			$pdo=getPDO();
@@ -190,17 +230,14 @@
 			$api_key = base64_encode(random_bytes($length));
 
 			
-			if (getAllAPIKEY($api_key)->num_rows > 0) {
+			if (getAllAPIKEY($api_key)) {
 				// La colonne contient la valeur recherchée
-				creerAPIKEY($login, $APIKEY);
-			} else {
-				// La colonne ne contient pas la valeur recherchée
-				$APIKEY = $api_key;
+				creerAPIKEY($login);
 			}
-
+			
 			$stmt = $pdo->prepare($maRequete);	
-			$stmt = $pdo->prepare("APIKEY", $APIKEY);									// Préparation de la requête
-			$stmt = $pdo->prepare("Email", $login);
+			$stmt->bindParam("APIKEY", $api_key);									// Préparation de la requête
+			$stmt->bindParam("login", $login);
             $stmt->execute();
 
             $IdInsere=$pdo ->lastInsertID();
