@@ -38,15 +38,13 @@
 			// Login et mot de passe correct, 
 			// Genération de la clé, stockage en BD (non fait dans cet exemple)
 			// Envoi de la clé au client.
-			print('on est ici');
-			creerAPIKEY($login);
+			
 			if (verifNonAPIKEY($login)) {
 				// La colonne contient la valeur recherchée
-				print('on est la');
-				
+				creerAPIKEY($login);
 			} 
-
-			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login);
+			
+			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login, $password);
 			sendJSON($infos, 200) ;
 		} else {
 			// Login incorrect

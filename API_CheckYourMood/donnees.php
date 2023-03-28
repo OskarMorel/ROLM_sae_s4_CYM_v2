@@ -103,18 +103,21 @@
 		}
 	}
 
-	function getAPIKEY($login){
+	function getAPIKEY($login, $mdp){
 
 		try {
 			$pdo=getPDO();
 
-			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login' ;
+			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login AND Mot_de_passe = :mdp' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
 			$stmt->bindParam("login", $login);
+            $stmt->bindParam("mdp", $mdp);
             $stmt->execute();
 
-            $connexion=$stmt ->fetchALL();
+            $connexion=$stmt->fetch();
+
+
 			$stmt->closeCursor();
 
 			$stmt=null;
@@ -200,13 +203,14 @@
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
 			$stmt->bindParam("login", $login);
             $stmt->execute();
+			$connexion=$stmt->fetch();
+			
 
-			if ($stmt == null) {
+			if (is_null($connexion['APIKEY'])) {
 				return true;
 			} else {
 				return false;
 			}
-			$connexion=$stmt ->fetchALL();
 			$stmt->closeCursor();
 			$stmt=null;
 			$pdo=null;
@@ -226,7 +230,7 @@
 
 			$maRequete='UPDATE compte SET APIKEY = :APIKEY WHERE Email = :login' ;
 			
-			$length = 32; // longueur de la clé d'API
+			$length = 16; // longueur de la clé d'API
 			$api_key = base64_encode(random_bytes($length));
 
 			
@@ -240,20 +244,20 @@
 			$stmt->bindParam("login", $login);
             $stmt->execute();
 
-            $IdInsere=$pdo ->lastInsertID();
 			$stmt->closeCursor();
 
 			$stmt=null;
 			$pdo=null;
 
-			sendJSON($IdInsere, 200) ;
 		} catch(PDOException $e){
 			$infos['Statut']="KO";
 			$infos['message']=$e->getMessage();
 			sendJSON($infos, 500) ;
-		}
+		} catch (Exception $e) {
+            echo("Erreur");
+        }
 
-	}
+    }
 	
 
 ?>
