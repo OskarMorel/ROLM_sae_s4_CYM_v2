@@ -22,5 +22,9 @@
         <item name="android:maxLength">64</item>
         <item name="maxLines">1</item>
         <item name="android:textSize">@dimen/taille_texte</item>
+<<<<<<< HEAD
+=======
+        <item name="android:buttonCornerRadius">50px</item>
+>>>>>>> d2cada8098608a9512954d3982e0830d383a8f41
     </style>
 </resources>
