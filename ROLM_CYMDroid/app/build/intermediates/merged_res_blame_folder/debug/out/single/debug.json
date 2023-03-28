@@ -1,74 +1,114 @@
 [
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_logout.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-xxhdpi\\logout.png"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_buttonshape.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\buttonshape.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_logout.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-mdpi\\logout.png"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\layout_accueil.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\layout\\accueil.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_logout.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-hdpi\\logout.png"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_logout.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-xhdpi\\logout.png"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\layout_accueil.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\layout\\accueil.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_buttonshape.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\buttonshape.xml"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Code\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_add_humeur.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-anydpi\\add_humeur.xml"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_add_humeur.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-hdpi\\add_humeur.png"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_add_humeur.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-xxhdpi\\add_humeur.png"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_logout.xml.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-anydpi\\logout.xml"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_add_humeur.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-xhdpi\\add_humeur.png"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_add_humeur.png.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\drawable-mdpi\\add_humeur.png"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "Z:\\Uwamp\\Uwamp_2020\\www\\ROLM_sae_s4_CYM_v2\\ROLM_CYMDroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     }
 ]
