@@ -106,9 +106,9 @@
 					break;
 					case 'humeursRecentes' :
 						// Retourne les types de clients
-                        $infos['APIKEYDEMONAPPLI']=getAPIKEY($login, $password);
-						authentification(); // Test si on est bien authenfifié pour l'API
-						getLast5Humors();
+						//authentification(); // Test si on est bien authenfifié pour l'API
+                        if (isset($_GET['cleApi'])) {$apiKey=$_GET['cleApi'];} else {$apiKey="";}
+						getLast5Humors($apiKey);
 						break;
 				
 					default : 

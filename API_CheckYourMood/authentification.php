@@ -6,6 +6,7 @@
 		if (isset($_SERVER["HTTP_APIKEYDEMONAPPLI"])) {
 			$cleAPI=$_SERVER["HTTP_APIKEYDEMONAPPLI"];
 			// Test de la clé API fait en dur pour l'exemple mais devrait être fait avec la BD
+            return $cleAPI;
 			if (!getAllAPIKEY($cleAPI)) {
 				$infos['Statut']="KO";
 				$infos['message']="APIKEY invalide.";
@@ -44,7 +45,7 @@
 				creerAPIKEY($login);
 			} 
 			
-			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login, $password);
+			$infos['APIKEYDEMONAPPLI']=getAPIKEY($login);
 			sendJSON($infos, 200) ;
 		} else {
 			// Login incorrect

@@ -4,7 +4,7 @@
 	function getPDO(){
 		// Retourne un objet connexion à la BD
 		$host='localhost';	// Serveur de BD
-		$db='checkyourmood';// Nom de la BD
+		$db='cym_test';// Nom de la BD
 		$user='root';		// User 
 		$pass='root';		// Mot de passe
 		$charset='utf8mb4';	// charset utilisé
@@ -30,21 +30,20 @@
 		}
 	}
 	
-	function getLast5Humors($id) {
+	function getLast5Humors($api_key) {
 		// Retourne la liste des catégories des clients
 		try {
 			$pdo=getPDO();
             // TODO Vérifier si la LIMIT marche bien ou pas
-			$maRequete='SELECT * FROM historique WHERE Code_Compte = :id LIMIT 5' ;
+			$maRequete='SELECT Libelle, Date_Hum, Informations FROM historique JOIN compte ON Code_Compte = ID_Compte JOIN humeur ON Code_hum = ID_Hum  WHERE APIKEY = :api LIMIT 5' ;
 			
-			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
-			$stmt->bindParam("id", $id);
+			$stmt = $pdo->prepare($maRequete);
+            // Préparation de la requête
+			$stmt->bindParam("api", $api_key);
             $stmt->execute();
 
-            $humors=$stmt ->fetchALL();
+            $humors=$stmt->fetchALL();
 			$stmt->closeCursor();
-
-
 
 			$stmt=null;
 			$pdo=null;
@@ -103,16 +102,15 @@
 		}
 	}
 
-	function getAPIKEY($login, $mdp){
+	function getAPIKEY($login){
 
 		try {
 			$pdo=getPDO();
 
-			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login AND Mot_de_passe = :mdp' ;
+			$maRequete='SELECT APIKEY FROM compte WHERE Email = :login' ;
 			
 			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
 			$stmt->bindParam("login", $login);
-            $stmt->bindParam("mdp", $mdp);
             $stmt->execute();
 
             $connexion=$stmt->fetch();
