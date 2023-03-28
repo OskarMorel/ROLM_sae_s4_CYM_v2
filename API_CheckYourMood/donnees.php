@@ -1,10 +1,11 @@
 <?php
 	// Données
+	//?cleApi=t1hhVWy8zLtWydfnGEdHSQ==
 		
 	function getPDO(){
 		// Retourne un objet connexion à la BD
 		$host='localhost';	// Serveur de BD
-		$db='cym_test';// Nom de la BD
+		$db='checkyourmood';// Nom de la BD
 		$user='root';		// User 
 		$pass='root';		// Mot de passe
 		$charset='utf8mb4';	// charset utilisé
@@ -229,7 +230,7 @@
 			$maRequete='UPDATE compte SET APIKEY = :APIKEY WHERE Email = :login' ;
 			
 			$length = 16; // longueur de la clé d'API
-			$api_key = base64_encode(random_bytes($length));
+			$api_key = bin2hex(random_bytes(8));
 
 			
 			if (getAllAPIKEY($api_key)) {

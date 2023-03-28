@@ -128,7 +128,7 @@
 				// Récupération des données envoyées
 				$url = explode("/", filter_var($_GET['demande'],FILTER_SANITIZE_URL));
 				switch($url[0]) {
-					case 'client' : 
+					case 'ajoutHumeur' : 
 						// Ajout d'un client
 						authentification(); // Test si on est bien authenfifié pour l'API
 						$donnees = json_decode(file_get_contents("php://input"),true);
