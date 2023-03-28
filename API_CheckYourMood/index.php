@@ -102,6 +102,8 @@
 						// La clé API sera utilisée pour les prochaines requetes.
 						if (isset($_GET['login'])) {$login=$_GET['login'];} else {$login="";}
 						if (isset($_GET['pwd'])) {$password=$_GET['pwd'];} else {$password="";}
+						$password = md5($password);
+						
 						verifLoginPassword($login,$password);  // retourne l'apiKey si les logins / pwd sont ok
 					break;
 					case 'humeursRecentes' :
