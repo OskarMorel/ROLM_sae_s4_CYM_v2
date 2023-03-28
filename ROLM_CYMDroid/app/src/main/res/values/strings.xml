@@ -19,5 +19,7 @@
     <string name="label_annuler">Annuler</string>
     <string name="label_valider">Valider</string>
 
+    <!-- Toast erreur de connexion -->
+    <string name="toast_erreur">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
 
 </resources>

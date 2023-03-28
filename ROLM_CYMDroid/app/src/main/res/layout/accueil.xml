@@ -50,7 +50,7 @@
         android:backgroundTint="@color/couleurBoutonAjouterHumeur"
         android:text="@string/label_nouvelle_humeur"
         android:textColor="@color/black"
-        android:drawableLeft="@drawable/addHumeur"/>
+        android:drawableLeft="@drawable/add_humeur"/>
 
 
 </LinearLayout>

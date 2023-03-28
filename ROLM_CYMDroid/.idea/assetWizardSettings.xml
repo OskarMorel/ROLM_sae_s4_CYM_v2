@@ -68,7 +68,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="addHumeur" />
+                                      <entry key="outputName" value="add_humeur" />
                                     </map>
                                   </option>
                                 </PersistentState>

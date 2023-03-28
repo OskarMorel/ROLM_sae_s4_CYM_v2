@@ -1,8 +1,3 @@
-/*  ==================================================================== */
-/*             Ci-dessous le code d'une classe à ajouter au projet       */
-/*  ==================================================================== */
-
-
 package com.coursdevappli.rolm_cymdroid;
 
 import com.android.volley.toolbox.HurlStack;
