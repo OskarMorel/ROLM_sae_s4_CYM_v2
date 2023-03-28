@@ -14,7 +14,5 @@
         <item name="android:maxLength">4</item>
         <item name="maxLines">1</item>
         <item name="android:textSize">@dimen/taille_texte</item>
-        <item name="android:inputType">number</item>
-        <item name="android:buttonCornerRadius">50px</item>
     </style>
 </resources>

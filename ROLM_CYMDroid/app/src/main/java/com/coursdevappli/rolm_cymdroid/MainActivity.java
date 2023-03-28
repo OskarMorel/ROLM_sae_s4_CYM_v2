@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
     String apiKey;
 
+    // Intent pour le liens avec une autre activité
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,11 +87,11 @@ public class MainActivity extends AppCompatActivity {
                                     throw new RuntimeException(e);
                                 }
                                 if (statusCode == 200) {
-                                    Intent intent = new Intent(MainActivity.this, accueil.class);
+                                    Intent intent = new Intent(MainActivity.this, Accueil.class);
                                     // Démarrer l'activité de destination
                                     startActivity(intent);
                                 } else {
-                                    // TODO message erreur
+                                    //Toast.makeText(this, R.string.toast_erreur, Toast.LENGTH_LONG).show();
                                 }
                             }
                         }

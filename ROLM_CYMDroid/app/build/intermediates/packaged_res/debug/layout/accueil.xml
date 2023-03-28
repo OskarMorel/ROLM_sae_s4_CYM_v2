@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="12dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:drawableRight="@drawable/logout"
+            android:scaleType="centerInside"
+            android:text="@string/label_deconnexion"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="2dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Ligne de séparation -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FF909090"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/couleurBoutonAjouterHumeur"
+        android:text="@string/label_nouvelle_humeur"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add_humeur"/>
 
 
 </LinearLayout>

@@ -6,67 +6,48 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml
+8-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml
+9-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
-12-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:6:9-35
+12-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.7.0] C:\Users\oskar\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.5.0] C:\Users\oskar\.gradle\caches\transforms-3\b1fe9740f6c86f0b7649a763c3bf2b85\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:7:9-43
+15-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:8:9-41
+16-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:9:9-54
+17-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:10:9-35
+18-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/Theme.ROLM_CYMDroid" >
-20-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:11:9-51
+20-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:11:9-51
 21        <activity
-21-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:12:9-20:20
+21-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:12:9-20:20
 22            android:name="com.coursdevappli.rolm_cymdroid.MainActivity"
-22-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:13:13-41
+22-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:13:13-41
 23            android:exported="true" >
-23-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:14:13-36
+23-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:14:13-36
 24            <intent-filter>
-24-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:15:13-19:29
+24-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:15:13-19:29
 25                <action android:name="android.intent.action.MAIN" />
-25-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:16:17-69
-25-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:16:25-66
+25-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:16:17-69
+25-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:16:25-66
 26
 27                <category android:name="android.intent.category.LAUNCHER" />
-27-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:18:17-77
-27-->D:\Code\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:18:27-74
+27-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:18:17-77
+27-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:18:27-74
 28            </intent-filter>
 29        </activity>
-30
-31        <provider
-31-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-32            android:name="androidx.startup.InitializationProvider"
-32-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-33            android:authorities="com.coursdevappli.rolm_cymdroid.androidx-startup"
-33-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-34            android:exported="false" >
-34-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-35            <meta-data
-35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-37                android:value="androidx.startup" />
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\oskar\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-38            <meta-data
-38-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\oskar\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\oskar\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-40                android:value="androidx.startup" />
-40-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\oskar\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-41        </provider>
-42    </application>
-43
-44</manifest>
+30        <activity android:name="com.coursdevappli.rolm_cymdroid.Accueil" />
+30-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:21:9-54
+30-->D:\Code\AMP\Apache24\htdocs\ROLM_sae_s4_CYM_v2\ROLM_CYMDroid\app\src\main\AndroidManifest.xml:21:19-42
+31    </application>
+32
+33</manifest>
