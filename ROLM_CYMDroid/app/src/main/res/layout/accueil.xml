@@ -22,16 +22,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
             android:drawableRight="@drawable/logout"
-            android:scaleType="centerInside"
             android:text="@string/label_deconnexion"
             android:textColor="@color/black"
             android:textSize="10sp"
-            tools:layout_editor_absoluteX="246dp"
-            tools:layout_editor_absoluteY="2dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

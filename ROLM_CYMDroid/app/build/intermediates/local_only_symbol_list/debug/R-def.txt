@@ -42,6 +42,8 @@ string libelle_mdp
 string texte_connexion
 string titre_popup
 string toast_erreur
+string toast_erreur_login
+string toast_erreur_reponse
 style Theme.ROLM_CYMDroid
 style Titre
 style zone_saisie

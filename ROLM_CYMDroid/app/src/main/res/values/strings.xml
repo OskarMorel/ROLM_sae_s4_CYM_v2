@@ -20,6 +20,7 @@
     <string name="label_valider">Valider</string>
 
     <!-- Toast erreur de connexion -->
-    <string name="toast_erreur">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
-
+    <string name="toast_erreur_login">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
+    <string name="toast_erreur">Une erreur est survenue, réessayez plus tard</string>
+    <string name="toast_erreur_reponse">Erreur de réponse du serveur. Nous travaillons dessus. Merci</string>
 </resources>
