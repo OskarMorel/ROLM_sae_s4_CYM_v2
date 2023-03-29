@@ -90,18 +90,11 @@ public class MainActivity extends AppCompatActivity {
                                 }
                                 if (statusCode == 200) {
                                     Intent intent = new Intent(MainActivity.this, Accueil.class);
-<<<<<<< HEAD
                                     System.out.println("là");
                                     // Démarrer l'activité de destination
                                     startActivity(intent);
                                 } else {
                                     System.out.println("Erreur connexion");
-=======
-                                    // Démarrer l'activité de destination
-                                    startActivity(intent);
-                                } else {
-                                    //Toast.makeText(this, R.string.toast_erreur, Toast.LENGTH_LONG).show();
->>>>>>> d2cada8098608a9512954d3982e0830d383a8f41
                                 }
                             }
                         }

@@ -36,7 +36,7 @@
 		try {
 			$pdo=getPDO();
             // TODO Vérifier si la LIMIT marche bien ou pas
-			$maRequete='SELECT Libelle, Date_Hum, Informations FROM historique JOIN compte ON Code_Compte = ID_Compte JOIN humeur ON Code_hum = ID_Hum  WHERE APIKEY = :api LIMIT 5' ;
+			$maRequete='SELECT Libelle, Date_Hum, Informations, Emoji FROM historique JOIN compte ON Code_Compte = ID_Compte JOIN humeur ON Code_hum = ID_Hum  WHERE APIKEY = :api LIMIT 5' ;
 			
 			$stmt = $pdo->prepare($maRequete);
             // Préparation de la requête
@@ -56,8 +56,34 @@
 			sendJSON($infos, 500) ;
 		}
 	}
+
+	function getTypeHumeur(){
+
+		try {
+			$pdo=getPDO();
+            // TODO Vérifier si la LIMIT marche bien ou pas
+			$maRequete='SELECT Libelle FROM humeur';
+			
+			$stmt = $pdo->prepare($maRequete);										// Préparation de la requête
+			$stmt->execute();	
+				
+			$humeur=$stmt ->fetchALL();
+			$stmt->closeCursor();
+			$stmt=null;
+			$pdo=null;
+
+			sendJSON($humeur, 200) ;
+
+			sendJSON($humors, 200) ;
+		} catch(PDOException $e){
+			$infos['Statut']="KO";
+			$infos['message']=$e->getMessage();
+			sendJSON($infos, 500) ;
+		}
+
+	}
 	
-	function addHumor($donneesJson) {
+	function addHumor($donneesJson, $api_key) {
 		if(!empty($donneesJson['ID_Histo'])
 			&& !empty($donneesJson['Code_Compte'])
 			&& !empty($donneesJson['Code_hum'])
@@ -68,9 +94,18 @@
 			  // Données remplies, on insère dans la table client
 			try {
 				$pdo=getPDO();
+
+				$requeteRecupCompte ='SELECT ID_Compte FROM compte WHERE APIKEY = :apikey';
+				$stmt = $pdo->prepare($requeteRecupCompte);
+				$stmt->bindParam("apikey", $api_key);
+				$stmt->execute();
+				$code_compte=$stmt->fetch();
+				$stmt->closeCursor();
+			    $stmt=null;
+
 				$maRequete='INSERT INTO historique(Code_Compte, Code_hum, Date_Hum, Date_Ajout, Informations) VALUES (:Code_Compte, :Code_hum, :Date_Hum, :Date_Ajout, :Informations)';
 				$stmt = $pdo->prepare($maRequete);						// Préparation de la requête
-				$stmt->bindParam("Code_Compte", $donneesJson['Code_Compte']);
+				$stmt->bindParam("Code_Compte", $code_compte);
 				$stmt->bindParam("Code_hum", $donneesJson['Code_hum']);
 				$stmt->bindParam("Date_Hum", $donneesJson['Date_Hum']);
 				$stmt->bindParam("Date_Ajout", $donneesJson['Date_Ajout']);
