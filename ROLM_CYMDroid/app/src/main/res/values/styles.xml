@@ -9,9 +9,17 @@
         <item name="android:layout_marginTop">@dimen/marge_haute</item>
         <item name="android:gravity">center</item>
     </style>
-    <!-- Style pour les zones de saisie des prix -->
+    <!-- Style pour les zones de saisie -->
     <style name="zone_saisie" >
         <item name="maxLines">1</item>
         <item name="android:textSize">@dimen/taille_texte</item>
+    </style>
+
+    <!-- Style pour chacher la action bar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!---Customize your theme here.-->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/red</item>
     </style>
 </resources>

@@ -24,6 +24,7 @@ drawable logout
 id btn_valider
 id login
 id pwd
+id zoneResultat
 layout accueil
 layout activity_main
 mipmap ic_launcher
@@ -40,10 +41,12 @@ string libelle_connexion
 string libelle_identifiant
 string libelle_mdp
 string texte_connexion
+string titre
 string titre_popup
 string toast_erreur
 string toast_erreur_login
 string toast_erreur_reponse
+style AppTheme
 style Theme.ROLM_CYMDroid
 style Titre
 style zone_saisie

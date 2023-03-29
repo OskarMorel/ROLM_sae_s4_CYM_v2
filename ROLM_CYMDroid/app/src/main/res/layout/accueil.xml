@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="50dp">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/app_name"
+            android:text="@string/titre"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="12dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="12dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="40dp"
             android:backgroundTint="@color/white"
             android:drawableRight="@drawable/logout"
+            android:onClick="seDeconnecter"
             android:text="@string/label_deconnexion"
             android:textColor="@color/black"
             android:textSize="10sp"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteX="258dp"
             tools:layout_editor_absoluteY="0dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <!-- Ligne de séparation -->
+
     <View
         android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="#FF909090"
+        android:layout_height="2dp"
+        android:background="@color/black"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/zoneResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="550dp"
         android:backgroundTint="@color/couleurBoutonAjouterHumeur"
+        android:drawableLeft="@drawable/add_humeur"
         android:text="@string/label_nouvelle_humeur"
-        android:textColor="@color/black"
-        android:drawableLeft="@drawable/add_humeur"/>
+        android:textColor="@color/black" />
 
 
 </LinearLayout>

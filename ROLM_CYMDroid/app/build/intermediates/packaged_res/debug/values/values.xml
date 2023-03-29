@@ -27,10 +27,17 @@
     <string name="libelle_identifiant">Adresse mail : </string>
     <string name="libelle_mdp">Mot de passe : </string>
     <string name="texte_connexion">SE CONNECTER</string>
+    <string name="titre">CheckYourMood</string>
     <string name="titre_popup">Nouvelle humeur</string>
     <string name="toast_erreur">Une erreur est survenue, réessayez plus tard</string>
     <string name="toast_erreur_login">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
     <string name="toast_erreur_reponse">Erreur de réponse du serveur. Nous travaillons dessus. Merci</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
     <style name="Theme.ROLM_CYMDroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorOnPrimary">@color/white</item>

@@ -1,5 +1,7 @@
 <resources>
+
     <string name="app_name">CYMDroid</string>
+    <string name="titre">CheckYourMood</string>
 
     <!-- Page de connexion -->
     <string name="texte_connexion">SE CONNECTER</string>

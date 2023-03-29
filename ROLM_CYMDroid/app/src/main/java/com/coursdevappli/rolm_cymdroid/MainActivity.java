@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Cacher la bar du haut
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
 
         editTextLogin = findViewById(R.id.login);
         editTextPwd = findViewById(R.id.pwd);
@@ -80,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
                                 throw new RuntimeException(e);
                             }
                             Intent intent = new Intent(MainActivity.this, Accueil.class);
+                            // Ajouter la clé api et l'envoyer dans l'activité 2
+                            intent.putExtra("apiKey", apiKey.toString());
                             // Démarrer l'activité de destination
                             startActivity(intent);
                         }
