@@ -2,6 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.ROLM_CYMDroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
+<<<<<<< HEAD
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+=======
+>>>>>>> d2cada8098608a9512954d3982e0830d383a8f41
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>

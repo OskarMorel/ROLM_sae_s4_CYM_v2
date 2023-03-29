@@ -132,9 +132,11 @@
 				switch($url[0]) {
 					case 'ajoutHumeur' : 
 						// Ajout d'un client
-						authentification(); // Test si on est bien authenfifié pour l'API
+						//authentification(); // Test si on est bien authenfifié pour l'API
+						if (isset($_GET['cleApi'])) {$apiKey=$_GET['cleApi'];} else {$apiKey="";}
+
 						$donnees = json_decode(file_get_contents("php://input"),true);
-						addHumor($donnees);
+						addHumor($donnees, $apiKey);
 						break ;
 					default : 
 						$infos['Statut']="KO";
