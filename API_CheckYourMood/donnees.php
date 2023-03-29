@@ -73,8 +73,6 @@
 			$pdo=null;
 
 			sendJSON($humeur, 200) ;
-
-			sendJSON($humors, 200) ;
 		} catch(PDOException $e){
 			$infos['Statut']="KO";
 			$infos['message']=$e->getMessage();

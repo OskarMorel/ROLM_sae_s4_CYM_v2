@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,15 +15,16 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 
 public class Accueil extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class Accueil extends AppCompatActivity {
 
     private TextView zoneResultat;
 
-    private static String urlApi = "http://192.168.146.1/ROLM_sae_s4_CYM_v2/API_CheckYourMood/";
+    private static final String urlApi = "http://192.168.146.1/ROLM_sae_s4_CYM_v2/API_CheckYourMood/";
 
     private RequestQueue fileRequete;
     @Override
@@ -97,6 +99,7 @@ public class Accueil extends AppCompatActivity {
     }
 
     public void setZoneResultatAvecObjetJson(JSONArray reponse){
+        JSONObject objetHumeursRecentes;
         try {
             StringBuilder resultatFormate = new StringBuilder();
             /*
@@ -105,9 +108,22 @@ public class Accueil extends AppCompatActivity {
              * extraites de l'objet Json
              */
             for (int i =0; i < reponse.length(); i++) {
-                resultatFormate.append(reponse.getString(i));
+                objetHumeursRecentes =  reponse.getJSONObject(i);
+                resultatFormate.append(
+                                objetHumeursRecentes.getString("Libelle"))
+                        .append(" - ");
+                resultatFormate.append(
+                                objetHumeursRecentes.getString("Date_Hum"))
+                        .append(" - ");
+                resultatFormate.append(
+                                objetHumeursRecentes.getString("Informations"))
+                        .append(" - ");
+                resultatFormate.append(
+                                objetHumeursRecentes.getString("Emoji"))
+                        .append("\n\n");
+
             }
-            // on affiche la chaîne formatée
+            // On affiche la chaîne formatée
             zoneResultat.setText(resultatFormate.toString());
         } catch(JSONException erreur) {
             /*
@@ -118,6 +134,17 @@ public class Accueil extends AppCompatActivity {
              */
             Toast.makeText(this, R.string.toast_erreur, Toast.LENGTH_LONG).show();
         }
+    }
+
+    // ******************************** CODE POUR BOITE DE DIALOGUE ********************************
+
+    private EditText dateHeure, informations;
+
+    public void afficherNouvelleHumeur(View view) {
+        DialogNouvHumeur dialog = new DialogNouvHumeur(Accueil.this);
+        dialog.show();
+
+
     }
 
 

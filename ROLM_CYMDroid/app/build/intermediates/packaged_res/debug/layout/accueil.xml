@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="67dp"
-        android:layout_marginTop="50dp">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/titre"
-            android:textSize="20sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginLeft="40dp"
-            android:backgroundTint="@color/white"
-            android:drawableRight="@drawable/logout"
-            android:onClick="seDeconnecter"
-            android:text="@string/label_deconnexion"
-            android:textColor="@color/black"
-            android:textSize="10sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/titre"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Ligne de séparation -->
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/logout"
+        android:onClick="seDeconnecter"
+        android:layout_marginRight="20dp"
+        android:text="@string/label_deconnexion"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <View
+        android:id="@+id/view"
         android:layout_width="fill_parent"
         android:layout_height="2dp"
+        android:layout_marginTop="10dp"
         android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/zoneResultat"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_margin="20dp"/>
 
     <Button
+        android:id="@+id/afficherNouvelleHumeur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="550dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/couleurBoutonAjouterHumeur"
         android:drawableLeft="@drawable/add_humeur"
         android:text="@string/label_nouvelle_humeur"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:onClick="afficherNouvelleHumeur"/>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

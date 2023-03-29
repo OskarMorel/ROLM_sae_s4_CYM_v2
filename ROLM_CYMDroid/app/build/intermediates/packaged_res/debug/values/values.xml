@@ -33,19 +33,19 @@
     <string name="toast_erreur_login">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
     <string name="toast_erreur_reponse">Erreur de réponse du serveur. Nous travaillons dessus. Merci</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        
+        <!---Customize your theme here.-->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/red</item>
     </style>
     <style name="Theme.ROLM_CYMDroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorOnPrimary">@color/white</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorOnSecondary">@color/black</item>
-        
+        <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+        <!-- Customize your theme here. -->
     </style>
     <style name="Titre">
         <item name="android:layout_gravity">center_horizontal</item>

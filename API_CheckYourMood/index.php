@@ -112,7 +112,11 @@
                         if (isset($_GET['cleApi'])) {$apiKey=$_GET['cleApi'];} else {$apiKey="";}
 						getLast5Humors($apiKey);
 						break;
-				
+					case 'typesHumeurs' :
+						// Retourne les types de clients
+						//authentification(); // Test si on est bien authenfifié pour l'API
+						getTypeHumeur();
+						break;
 					default : 
 						$infos['Statut']="KO";
 						$infos['message']=$url[0]." inexistant";

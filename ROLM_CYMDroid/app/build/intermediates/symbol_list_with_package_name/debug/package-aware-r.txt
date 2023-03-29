@@ -1819,6 +1819,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id afficherNouvelleHumeur
 id alertTitle
 id aligned
 id all
@@ -1840,6 +1841,8 @@ id blocking
 id bottom
 id bounce
 id btn_valider
+id button
+id button5
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1873,6 +1876,7 @@ id counterclockwise
 id custom
 id customPanel
 id cut
+id dateHeure
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -1943,6 +1947,7 @@ id ignore
 id ignoreRequest
 id image
 id info
+id informations
 id invisible
 id inward
 id italic
@@ -2136,6 +2141,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2161,11 +2171,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeHumeurs
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id view
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -2312,6 +2324,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout nouvelle_humeur
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
