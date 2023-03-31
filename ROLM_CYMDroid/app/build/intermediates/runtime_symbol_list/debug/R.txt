@@ -1747,6 +1747,7 @@ int drawable notification_template_icon_bg 0x7f07008e
 int drawable notification_template_icon_low_bg 0x7f07008f
 int drawable notification_tile_bg 0x7f070090
 int drawable notify_panel_notification_icon_bg 0x7f070091
+int drawable refresh 0x7f070095
 int drawable test_custom_background 0x7f070092
 int drawable tooltip_frame_dark 0x7f070093
 int drawable tooltip_frame_light 0x7f070094
@@ -1839,9 +1840,10 @@ int id beginning 0x7f080055
 int id blocking 0x7f080056
 int id bottom 0x7f080057
 int id bounce 0x7f080058
+int id btnAjoutHumeur 0x7f0801b7
 int id btn_valider 0x7f080059
 int id button 0x7f08005a
-int id button5 0x7f08005b
+int id button2 0x7f0801b8
 int id buttonPanel 0x7f08005c
 int id cache_measures 0x7f08005d
 int id cancel_button 0x7f08005e

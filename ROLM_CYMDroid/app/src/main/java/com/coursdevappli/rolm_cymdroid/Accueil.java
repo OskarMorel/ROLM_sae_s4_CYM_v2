@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ import java.util.Locale;
 
 public class Accueil extends AppCompatActivity {
 
-    String cleApi;
+    static String cleApi;
 
     private TextView zoneResultat;
 
@@ -47,6 +48,10 @@ public class Accueil extends AppCompatActivity {
         cleApi = getIntent().getStringExtra("apiKey");
 
         zoneResultat = findViewById(R.id.zoneResultat);
+        afficherHumeurs(zoneResultat);
+    }
+
+    public void raffraichir (View view) {
         afficherHumeurs(zoneResultat);
     }
 
@@ -117,9 +122,6 @@ public class Accueil extends AppCompatActivity {
                         .append(" - ");
                 resultatFormate.append(
                                 objetHumeursRecentes.getString("Informations"))
-                        .append(" - ");
-                resultatFormate.append(
-                                objetHumeursRecentes.getString("Emoji"))
                         .append("\n\n");
 
             }
@@ -139,13 +141,15 @@ public class Accueil extends AppCompatActivity {
     // ******************************** CODE POUR BOITE DE DIALOGUE ********************************
 
     private EditText dateHeure, informations;
+    private Spinner typeHumeur;
 
     public void afficherNouvelleHumeur(View view) {
         DialogNouvHumeur dialog = new DialogNouvHumeur(Accueil.this);
+
         dialog.show();
-
-
     }
+
+
 
 
 }

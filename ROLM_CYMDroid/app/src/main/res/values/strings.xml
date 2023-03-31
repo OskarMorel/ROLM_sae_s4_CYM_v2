@@ -25,4 +25,7 @@
     <string name="toast_erreur_login">Votre identifiant ou mot de passe est incorrec. Veuillez réessayer. </string>
     <string name="toast_erreur">Une erreur est survenue, réessayez plus tard</string>
     <string name="toast_erreur_reponse">Erreur de réponse du serveur. Nous travaillons dessus. Merci</string>
+
+    <!-- Toast validation nouvelle humeur -->
+    <string name="toast_validation_nv_humeur">Nouvelle humeur ajoutée avec succès !!</string>
 </resources>

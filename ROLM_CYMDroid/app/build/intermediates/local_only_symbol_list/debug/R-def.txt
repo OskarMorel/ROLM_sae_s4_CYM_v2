@@ -21,10 +21,12 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
 drawable logout
+drawable refresh
 id afficherNouvelleHumeur
+id btnAjoutHumeur
 id btn_valider
 id button
-id button5
+id button2
 id dateHeure
 id informations
 id login

@@ -36,7 +36,7 @@
 		try {
 			$pdo=getPDO();
             // TODO Vérifier si la LIMIT marche bien ou pas
-			$maRequete='SELECT Libelle, Date_Hum, Informations, Emoji FROM historique JOIN compte ON Code_Compte = ID_Compte JOIN humeur ON Code_hum = ID_Hum  WHERE APIKEY = :api LIMIT 5' ;
+			$maRequete='SELECT Libelle, Date_Hum, Informations FROM historique JOIN compte ON Code_Compte = ID_Compte JOIN humeur ON Code_hum = ID_Hum  WHERE APIKEY = :api ORDER BY Date_Hum DESC LIMIT 5';
 			
 			$stmt = $pdo->prepare($maRequete);
             // Préparation de la requête
@@ -81,15 +81,15 @@
 
 	}
 	
-	function addHumor($donneesJson, $api_key) {
-		if(!empty($donneesJson['ID_Histo'])
-			&& !empty($donneesJson['Code_Compte'])
-			&& !empty($donneesJson['Code_hum'])
+	function addHumor($api_key) {
+		$donneesJson = json_decode(file_get_contents("php://input"), true);
+		if(!empty($donneesJson['Code_hum'])
 			&& !empty($donneesJson['Date_Hum'])
 			&& !empty($donneesJson['Date_Ajout'])
 			&& !empty($donneesJson['Informations'])
 		  ){
-			  // Données remplies, on insère dans la table client
+			
+			// Données remplies, on insère dans la table client
 			try {
 				$pdo=getPDO();
 
@@ -103,7 +103,7 @@
 
 				$maRequete='INSERT INTO historique(Code_Compte, Code_hum, Date_Hum, Date_Ajout, Informations) VALUES (:Code_Compte, :Code_hum, :Date_Hum, :Date_Ajout, :Informations)';
 				$stmt = $pdo->prepare($maRequete);						// Préparation de la requête
-				$stmt->bindParam("Code_Compte", $code_compte);
+				$stmt->bindParam("Code_Compte", $code_compte['ID_Compte']);
 				$stmt->bindParam("Code_hum", $donneesJson['Code_hum']);
 				$stmt->bindParam("Date_Hum", $donneesJson['Date_Hum']);
 				$stmt->bindParam("Date_Ajout", $donneesJson['Date_Ajout']);
