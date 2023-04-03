@@ -1,15 +1,9 @@
 # ROLM_sae_s4_CYM_v2
 
-La startup CheckYourMood souhaite développer une deuxième version de son application Web éponyme.
-La version 1 de l’application permet à un utilisateur enregistré sur la plateforme d’indiquer son
-humeur à différents moments de la journée afin de pouvoir disposer de visualisations sur son
-humeur au fil du temps en fonction de différents paramètres comme la période, le type d’humeur,
-etc. Pour plus de détails sur la version 1 de l’application, vous pouvez consulter le cahier des
-charges de la version 1 (cf. SAÉ du semestre 3).
-La version 2 de l’application vise 2 objectifs :
-- Améliorer la qualité de l’application (code, tests, impact environnemental, sécurité).
-- Fournir une version mobile Android de l'application. Cette version permettras de s'authentifier,
-consulter les 5 dernières humeurs et ajouter une humeur.
+Le but de ce projet est dans un premier temps améliorer le projet CheckYourMood afin de fournir 
+la version 2 de l'application.
+Dans un second temps, il faudra créer une application mobile qui utilisera une API, les deux étant sur deux VM.
+Cette application permettra de se connecter à son compte CYM et de consulter ses 5 dernières humeurs ainsi que d'en ajouter à n'importe quelle heure de la journée.
 
 Ce repository est utilisé pour le développement de la version mobile de CheckYourMood, appelée, CYMDroid
 
