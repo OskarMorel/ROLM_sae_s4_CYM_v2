@@ -1,6 +1,6 @@
 # ROLM_sae_s4_CYM_v2
 
-Le but de ce projet est dans un premier temps améliorer le projet CheckYourMood afin de fournir 
+Le but de ce projet est dans un premier temps d'améliorer le projet CheckYourMood afin de fournir 
 la version 2 de l'application.
 Dans un second temps, il faudra créer une application mobile qui utilisera une API, les deux étant sur deux VM.
 Cette application permettra de se connecter à son compte CYM et de consulter ses 5 dernières humeurs ainsi que d'en ajouter à n'importe quelle heure de la journée.
