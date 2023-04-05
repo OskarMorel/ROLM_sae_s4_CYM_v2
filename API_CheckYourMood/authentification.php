@@ -23,25 +23,16 @@
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////
 
-	/*
-		TODO On verifie si les logins correspondent à l'un stockée sur la base de données
-			Si oui alors on vérifie si c'est sa première connection
-				Si oui alors on créer la clé pour ce client et on la stock dans la BD
-			Sinon on cherche son login et on entre la clé API pour le connecter
-		Sinon on lui indique qu'il n'est pas inscrit et qu'il doit s'inscrire sur le site
-	*/
 	
 	function verifLoginPassword($login, $password) {
-		// fonction qui vérifie si le login et le password sont ok.
-		// Si ok, on génère une clé API qui sera normalement stockée dans la BD
-		// Et on la retourne au client
+		
 		if (verifLogin($login, $password)) {
 			// Login et mot de passe correct, 
-			// Genération de la clé, stockage en BD (non fait dans cet exemple)
+			// Genération de la clé, stockage en BD 
 			// Envoi de la clé au client.
 			
 			if (verifNonAPIKEY($login)) {
-				// La colonne contient la valeur recherchée
+				// La colonne ne contient pas la valeur recherchée
 				creerAPIKEY($login);
 			} 
 			
