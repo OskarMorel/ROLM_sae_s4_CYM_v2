@@ -25,14 +25,10 @@
 						verifLoginPassword($login,$password);  // retourne l'apiKey si les logins / pwd sont ok
 					break;
 					case 'humeursRecentes' :
-						// Retourne les types de clients
-						//authentification(); // Test si on est bien authenfifié pour l'API
                         if (isset($_GET['cleApi'])) {$apiKey=$_GET['cleApi'];} else {$apiKey="";}
 						getLast5Humors($apiKey);
 						break;
 					case 'typesHumeurs' :
-						// Retourne les types de clients
-						//authentification(); // Test si on est bien authenfifié pour l'API
 						getTypeHumeur();
 						break;
 					default : 
@@ -48,13 +44,9 @@
 			break ;
 		case "POST" :
 			if (!empty($_GET['demande'])) {
-				// Ajout d'un client / type de client
-				// Récupération des données envoyées
 				$url = explode("/", filter_var($_GET['demande'],FILTER_SANITIZE_URL));
 				switch($url[0]) {
 					case 'ajoutHumeur' : 
-						// Ajout d'un client
-						//authentification(); // Test si on est bien authenfifié pour l'API
 						if (isset($_GET['cleApi'])) {$apiKey=$_GET['cleApi'];} else {$apiKey="";}
 						
 						
